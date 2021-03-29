@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data class="BrandBinding">
+        <variable
+            name="brandView"
+            type="com.roben.evaly.viewmodel.BrandViewModel" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                app:imageUrl="@{brandView.image}"
+                android:layout_margin="6dp"
+                android:src="@drawable/best_value"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+            <TextView
+                android:gravity="center"
+                android:layout_marginTop="7dp"
+                android:text="@{brandView.title}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

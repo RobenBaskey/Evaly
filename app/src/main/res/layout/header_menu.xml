@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:orientation="horizontal"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_dashboardHeader_profilePic"
+            android:src="@drawable/profile_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_dashboardHeader_profileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Roben Baskey"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_marginTop="7dp"
+                android:id="@+id/tv_dashboardHeader_profileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="01717601905"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
